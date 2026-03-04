@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Spam Detection</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Email Spam Detection System</h1>
+        <p class="subtitle">
+            Paste your email content to check whether it is spam or not.
+        </p>
+
+        <!-- FORM START -->
+        <form method="POST" action="/predict">
+            
+            <textarea 
+                name="email_text"
+                placeholder="Paste your email message here..."
+                required>{{ request.form.email_text }}</textarea>
+
+            <button type="submit">Analyze Email</button>
+
+        </form>
+        <!-- FORM END -->
+
+        <!-- Result Section -->
+        {% if prediction %}
+            <div class="result {{ 'error' if prediction == '✖ SPAM' else 'success' }}">
+                {{ prediction }}
+            </div>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
