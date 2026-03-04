@@ -41,7 +41,7 @@ http://127.0.0.1:5000
 Paste an email message into the input box and click Analyze Email to see whether it is Spam or Not Spam.
 
 📌 Project Overview
-## Working on it with : - 
+## Worked on it with : - 
 
   Subal Pal( https://github.com/subal708 )
 
