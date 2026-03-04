@@ -1,18 +1,18 @@
 📧 Spam Email Detection System
 
-This is a simple Machine Learning web app that checks whether an email message is Spam or Not Spam.
+A simple Machine Learning web application that classifies email messages as Spam or Not Spam.
 
-The system looks at:
+The system analyzes patterns such as:
 
-Spam-related words
+Presence of spam-related keywords
 
-Special symbols like ! and $
+Usage of special symbols (e.g., !, $)
 
-Use of capital letters
+Excessive use of capital letters
 
-to make a prediction.
+Based on these features, the model predicts whether the email is spam.
 
-🛠️ Built With
+🛠️ Tech Stack
 
 Python
 
@@ -20,18 +20,30 @@ Flask
 
 Scikit-learn
 
-▶️ Run the Project
+🚀 Getting Started
 
-Install requirements:
+Follow these steps to run the project locally.
 
-pip install -r requirements.txt
+1️⃣ Install Dependencies
 
-Run:
+pip install -r requirements.txt 
+
+---
+2️⃣ Run the Application
 
 python app.py
 
-Open:
-
+---
+## 3️⃣ Open in Browser 
+Go to:
 http://127.0.0.1:5000
 
-Paste any email text and click Analyze Email to check if it is Spam or Not Spam.
+Paste an email message into the input box and click Analyze Email to see whether it is Spam or Not Spam.
+
+📌 Project Overview
+## Working on it with : - 
+
+  Subal Pal( https://github.com/subal708 )
+
+  ---
+**This project demonstrates how Machine Learning can be integrated with a Flask web application to create a simple real-world spam detection system.**
